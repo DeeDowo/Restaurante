@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --flame: hsla(14, 77%, 54%, 1);
+    --honeydew: hsla(94, 50%, 95%, 1);
+    --royal-purple: hsla(279, 33%, 44%, 1);
+    --hunyadi-yellow: hsla(39, 92%, 57%, 1);
+    --glaucous: hsla(235, 29%, 61%, 1);
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    height: 100svh;
+}
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--honeydew);
+
+    padding: 2rem;
+
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.header__titulo{
+    font-size: 2.5rem;
+    font-weight: 100;
+
+    text-decoration: underline 1px var(--royal-purple);
+    text-underline-offset: 0.5rem;
+}
+.header__titulo-subrayado{
+    font-weight: 700;
+}
+
+.header__nav{
+    display: flex;
+    gap: 1.5rem;
+}
+.header__nav--home,
+.header__nav--menu,
+.header__nav--about{
+    font-family: inherit;
+    background-color: var(--honeydew);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+.header__nav--home:hover,
+.header__nav--menu:hover,
+.header__nav--about:hover{
+    cursor: pointer;
+    text-decoration: underline 1px var(--royal-purple);
+    text-underline-offset: 0.5rem;
+}
+
+/*cards menu*/
+
