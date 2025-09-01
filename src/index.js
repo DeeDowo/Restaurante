@@ -1,7 +1,12 @@
 import "./style.css";
+import {getHome} from "./home.js"
+import {us} from "./us.js"
+import {menu} from "./menu.js"
 
-import fondo from "./img/fondo.png";
-import fondo_dos from "./img/fondo_dos.png";
+const boton_home = document.querySelector(".header__nav--home");
+const boton_menu = document.querySelector(".header__nav--menu");
+const boton_sobre_nosotros = document.querySelector(".header__nav--about");
 
-const body = document.querySelector("body");
-body.style.backgroundImage = `url(${fondo_dos})`;
+boton_home.addEventListener("click", getHome);
+boton_menu.addEventListener("click", menu);
+boton_sobre_nosotros.addEventListener("click", us);
