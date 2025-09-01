@@ -4,6 +4,8 @@ import pastel3 from "./img/card_pastel_3.jpg";
 
 function menu() {
     const contenedor = document.querySelector('.contenedor')
+    contenedor.classList.remove('home', 'us');
+    contenedor.classList.add('menu');
     contenedor.innerHTML =
         `<div class="card-menu">
         <div class="card-menu__imagen1">

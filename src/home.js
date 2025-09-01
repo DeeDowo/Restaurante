@@ -1,6 +1,7 @@
 
 function getHome(){
     const contenedor = document.querySelector('.contenedor')
+    contenedor.classList.remove('menu', 'us');
     contenedor.classList.add('home');
     contenedor.innerHTML =
         `<div class="overlay"></div>

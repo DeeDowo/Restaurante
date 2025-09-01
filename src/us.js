@@ -1,5 +1,7 @@
 function us(){
     const contenedor = document.querySelector('.contenedor')
+    contenedor.classList.remove('home', 'menu');
+    contenedor.classList.add('us');
     contenedor.innerHTML =
         `<div class="sobre-nosotros__card">
         <h2 class="sobre-nosotros__titulo">

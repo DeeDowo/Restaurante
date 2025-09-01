@@ -211,3 +211,39 @@ body{
     transition: 0.5s;
     transform: scale(1.05);
 }
+/*us*/
+.sobre-nosotros__card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 70ch;
+    margin: 0 auto;
+
+    padding: 2rem;
+}
+.sobre-nosotros__titulo{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+.sobre-nosotros__texto{
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+}
+.sobre-nosotros__boton{
+    place-self: center;
+    background-color: var(--flame);
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: 0.5s;
+}
+.sobre-nosotros__boton:hover{
+    cursor: pointer;
+    background-color: var(--hunyadi-yellow);
+    transition: 0.5s;
+    transform: scale(1.05);
+}
